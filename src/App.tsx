@@ -59,6 +59,7 @@ function App() {
         login: async ({ credential }: CredentialResponse) => {
             const profileObj = credential ? parseJwt(credential) : null;
 
+            //Save user to MongoDB
             if (profileObj) {
                 const response = await fetch(
                     "http://localhost:8080/api/v1/users",
@@ -127,7 +128,6 @@ function App() {
 
     return (
         <ColorModeContextProvider>
-            <GitHubBanner />
             <CssBaseline />
             <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
             <RefineSnackbarProvider>
@@ -153,12 +153,10 @@ function App() {
                         },
                         {
                             name: "reviews",
-                            list: Home,
                             icon: <StarOutlineRounded />,
                         },
                         {
                             name: "messages",
-                            list: Home,
                             icon: <ChatBubbleOutline />,
                         },
                         {

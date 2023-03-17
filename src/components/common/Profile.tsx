@@ -72,7 +72,7 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                     {name}
                                 </Typography>
                                 <Typography fontSize={16} color="#808191">
-                                    Realestate Agent
+                                    Realestate Agent (Admin)
                                 </Typography>
                             </Stack>
 
@@ -96,8 +96,7 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                             fontSize={14}
                                             color="#11142D"
                                         >
-                                            4517 Washington Ave. Manchaster,
-                                            Kentucky 39495
+                                            Dong Nai, Viet Nam
                                         </Typography>
                                     </Box>
                                 </Stack>
@@ -128,7 +127,7 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                                 color="#11142D"
                                                 noWrap
                                             >
-                                                +0123 456 7890
+                                                +0866192580
                                             </Typography>
                                         </Box>
                                     </Stack>

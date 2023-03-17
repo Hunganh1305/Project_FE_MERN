@@ -251,7 +251,7 @@ const PropertyDetails = () => {
                                     fontWeight={400}
                                     color="#808191"
                                 >
-                                    North Carolina, USA
+                                    Dong Nai, VietNam
                                 </Typography>
                             </Stack>
 
